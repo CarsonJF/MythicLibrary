@@ -1,0 +1,27 @@
+#~~~~~ DAMAGE MODIFIER SKILLS ~~~~~#
+DoFullDamage:
+ Skills:
+  - cancelevent{sync=true} @Self
+  - basedamage{m=1} @target
+DoDoubleDamage:
+ Skills:
+  - cancelevent{sync=true} @Self
+  - basedamage{m=2} @target
+DoHalfDamage:
+ Skills:
+  - CancelEvent
+  - basedamage{m=.5} @target
+DoNoDamage:
+ Skills:
+  - CancelEvent
+
+#~~~~~ KNOCKBACK MODIFIER SKILLS ~~~~~#
+Knockback:
+  Skills:
+   - throw{v=20} @target
+WeakKnockback:
+  Skills:
+   - throw{v=10} @target
+HardKnockback:
+  Skills:
+   - throw{v=40} @target
