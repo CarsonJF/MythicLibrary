@@ -1,0 +1,25 @@
+WalkingAnimation:
+  Conditions:
+  - moving{} true
+  - onGround{} true
+  Skills:
+  - cquip{item=<internal-id>Walk1;slot=4} ~onSpawn
+  - delay 3
+  - cquip{item=<internal-id>;slot=4} ~onSpawn
+  - delay 3
+  - cquip{item=<internal-id>Walk2;slot=4} ~onSpawn
+  - delay 3
+  - cquip{item=<internal-id>;slot=4} ~onSpawn
+  - delay 3
+
+HurtAnimation:
+  Skills:
+  - cquip{item=<internal-id>Hurt;slot=4}
+  - delay 10
+  - cquip{item=<internal-id>;slot=4}
+
+AttackAnimation:
+  Skills:
+  - cquip{item=<internal-id>Attack;slot=4}
+  - delay 10
+  - cquip{item=<internal-id>;slot=4}
